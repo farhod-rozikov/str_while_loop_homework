@@ -6,4 +6,8 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i, c = 0, 0
+    while i < len(s):
+        c += int(s[i])            
+        i += 1
+    return c
