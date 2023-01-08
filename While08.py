@@ -6,4 +6,9 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i, c = 0, 0
+    while i < len(s):
+        if int(s[i]) % 2 == 1:
+            c += 1
+        i += 1
+    return c
