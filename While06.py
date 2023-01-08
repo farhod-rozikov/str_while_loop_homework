@@ -7,3 +7,10 @@ def main(s):
     Returns:
         int: return answer
     """
+    vowels = 'aeiou'
+    i, c = 0, 0
+    while i < len(s):
+        if not s[i] in vowels:
+            c += 1
+        i += 1
+    return c
