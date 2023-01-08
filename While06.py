@@ -10,7 +10,7 @@ def main(s):
     vowels = 'aeiou'
     i, c = 0, 0
     while i < len(s):
-        if not s[i] in vowels:
+        if not s[i] in vowels and s[i].isalpha():
             c += 1
         i += 1
     return c
